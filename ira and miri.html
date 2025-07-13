@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>צור קשר</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      direction: rtl;
+      text-align: center;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>מעוניין שנחזור אליך?</h1>
+    <p>השאר פרטים ונחזור אליך בהקדם!</p>
+
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="שם מלא" placeholder="שם מלא" required>
+      <input type="tel" name="טלפון" placeholder="טלפון" required>
+      <textarea name="הודעה" placeholder="איך נוכל לעזור לך?" rows="4"></textarea>
+      <button type="submit">שלח פרטים</button>
+    </form>
+  </div>
+
+</body>
+</html>
